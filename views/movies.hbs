@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Movies</title>
+  </head>
+  <body>
+    {{#each movieData}}
+    <h1>{{title}}</h1>
+    {{/each}}
+
+    <h3>Add a Movie:</h3>
+    <form action="/movies/new" method="post">
+      <label for="title">Movie Title</label>
+      <input type="text" name="title" value="">
+      <input type='hidden' name='director_id' value='1'>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
