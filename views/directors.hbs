@@ -14,14 +14,11 @@
     <form action="/directors/new" method="post">
       <label for="title">Movie Title</label>
       <input type="text" name="title" value="">
-      <input type='hidden' name='director_id' value='1'>
-      <label for='name'>Name</lable>
+    
+      <label for='name'>Director Name</lable>
       <input type="text" name="name" value="">
       <label for="role">Role</label>
-      <select name="role">
-        <option value='actor'>Actor</option>
-        <option value='director'>Director</option>
-      </select>
+      <input type='hidden' name='role' value='director'>
       <button type="submit">Submit</button>
     </form>
   </body>

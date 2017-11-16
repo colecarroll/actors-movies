@@ -13,7 +13,12 @@
     <form action="/movies/new" method="post">
       <label for="title">Movie Title</label>
       <input type="text" name="title" value="">
-      <input type='hidden' name='director_id' value='1'>
+      <label for="directorName">Director Name</label>
+      <input type="text" name="directorName" value="">
+      <input type="hidden" name="role" value="director">
+      <label for="actorName">Actor Name</label>
+      <input type="text" name="actorName" value="">
+      <input type="hidden" name="role2" value="actor">
       <button type="submit">Submit</button>
     </form>
   </body>
